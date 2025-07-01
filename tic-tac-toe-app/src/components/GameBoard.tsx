@@ -97,13 +97,13 @@ export default function GameBoard({ onGameEnd, gameMode, difficulty }: GameBoard
   }
 
   return (
-    <div className="flex flex-col items-center space-y-8">
-      <div className="text-3xl sm:text-4xl font-bold text-white mb-4 neon-text">
+    <div className="flex flex-col items-center space-y-4">
+      <div className="text-2xl sm:text-3xl font-bold text-white mb-2 neon-text">
         {status}
       </div>
       
       <div className={`
-        grid grid-cols-3 gap-3 sm:gap-4 p-6 sm:p-8 border-4 border-cyan-400 rounded-xl 
+        grid grid-cols-3 gap-2 sm:gap-3 p-4 sm:p-6 border-4 border-cyan-400 rounded-xl 
         bg-gray-800/50 backdrop-blur-sm transition-opacity duration-300
         ${isThinking ? 'opacity-70' : 'opacity-100'}
       `}>
@@ -121,7 +121,7 @@ export default function GameBoard({ onGameEnd, gameMode, difficulty }: GameBoard
       {(winner || isDraw) && (
         <button
           onClick={resetGame}
-          className="px-12 py-4 text-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-lg
+          className="px-8 py-2 text-lg bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-lg
                      transition-all duration-300 ease-in-out
                      hover:shadow-lg hover:shadow-cyan-400/50
                      focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-50"

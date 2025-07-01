@@ -11,8 +11,8 @@ export default function Square({ value, onSquareClick, winningSquare, disabled }
   return (
     <button
       className={`
-        w-28 h-28 sm:w-32 sm:h-32 border-4 border-cyan-400 bg-gray-900 
-        text-5xl sm:text-6xl font-bold text-white
+        w-20 h-20 sm:w-24 sm:h-24 border-4 border-cyan-400 bg-gray-900 
+        text-4xl sm:text-5xl font-bold text-white
         transition-all duration-300 ease-in-out
         hover:bg-gray-800 hover:border-cyan-300 hover:shadow-lg hover:shadow-cyan-400/50
         active:scale-95 game-square
